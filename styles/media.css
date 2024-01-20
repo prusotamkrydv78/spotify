@@ -1,0 +1,75 @@
+@media (max-width:1024px) {
+  .songList{
+    height: 400px;
+  }
+  .footer{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .songList{
+    height: 400px;
+  }
+  .left {
+    position: absolute;
+    z-index: 1;
+    left: -100%;
+    transition: left 0.5s linear;
+    width: 50%;
+  }
+  .right {
+    width: 100vw;
+  }
+  .playbar {
+    width: 97.5vw;
+  }
+  .humburger {
+    display: block;
+  }
+  .close {
+    display: block;
+  }
+} 
+@media (max-width: 430px) {
+  .buttons button {
+    margin: 0 8px;
+    font-size: 13px;
+    height: 30px;
+    width: 75px;
+  }.left{
+    width: 100%;
+  }
+  .songList{
+    height: 400px;
+  }
+  .spotifyPlaylist .card {
+    width: 98%;
+  }
+  .playbar {
+    width: 93.5vw;
+    background-color: #040404b8;
+  }
+  .songInfo {
+    font-size: 10px;
+  }
+  .seekContainer {
+    margin: 5px 0;
+  }
+  .seekbar {
+    border: 1px solid black;
+  }
+ .seekbar .circle {
+    height: 0px;
+    position: absolute;
+    width: 0px;
+    border: 4px solid black;
+    border-radius: 50%;
+    top: -4px;
+    transition: 0.4s linear;
+    left: -2px;
+}
+  .time {
+    font-size: 11px !important;
+  }
+}

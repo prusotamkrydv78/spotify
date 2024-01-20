@@ -1,0 +1,245 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.border {
+  border: 2px solid;
+}
+.left {
+  width: 25vw;
+  padding: 10px;
+}
+.right {
+  width: 75vw;
+}
+.home {
+  padding: 10px;
+  position: relative;
+}
+.close {
+  height: 25px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+}
+ .humburger{
+  display: none;
+ }
+.home ul li {
+  width: 14px;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.heading {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+  width: 100%;
+  align-items: center;
+  font-weight: 700;
+}
+.heading img {
+  width: 30px;
+}
+.libary {
+  min-height: 80vh;
+  position: relative;
+}
+.footer {
+  display: flex;
+  font-size: 10px;
+  color: gray;
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+}
+.right {
+  margin: 16px 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  height: 70px;
+  padding: 15px 17px;
+  background: rgb(56 56 56 / 91%);
+}
+  
+.spotifyPlaylist {
+  padding: 10px;
+  position: relative;
+  height: 84vh;
+}
+.cardContainer {
+  gap: 10px;
+  flex-wrap: wrap;
+  max-height: 68vh;
+  margin: 30px;
+  overflow-y: scroll;
+}
+.spotifyPlaylist .card {
+  width: 200px;
+  background-color: #252525;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card > * {
+  padding: 5px;
+}
+.card p {
+  font-size: 15px;
+}
+.card .play {
+  height: 40px;
+  background-color: #1fdf6d;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  right: 15px;
+  bottom: 126px;
+  opacity: 0;
+  transition: 1s linear;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: contain;
+}
+.buttons button {
+  background-color: rgb(34, 34, 34);
+  color: rgb(220, 220, 220);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 12px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+}
+
+.buttons button:hover {
+  color: white;
+  background-color: rgb(37 37 37);
+  font-weight: bold;
+}
+.login {
+  background-color: white !important;
+  color: black !important;
+  border-radius: 50px;
+}
+.login:hover {
+  background-color: rgba(255, 255, 255, 0.923) !important;
+  font-weight: bolder !important;
+}
+.signup {
+  border-radius: 5px;
+}
+.playbar {
+  background-color: #6667661c;
+  width: 73.7vw;
+  padding: 20px;
+  position: fixed;
+  bottom: 45px;
+  border-radius: 6px;
+  flex-direction: column;
+  height: 10vh;
+  /* gap: 5px; */
+}
+.songButton {
+  gap: 16px;
+}
+.songButton img {
+  cursor: pointer;
+}
+.songInfo {
+  position: revert;
+  align-self: flex-start;
+  font-size: 13px;
+  margin: 4px 0;
+}
+.seekContainer {
+  width: 100%;
+  display: flex;
+  height: 0px;
+  align-items: center;
+  gap: 4px;
+  margin: 11px 0;
+}
+
+.seekbar {
+  width: 95%;
+  border: 2px solid black;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  filter: invert(1);
+}
+.seekbar .circle {
+  height: 0px;
+  position: absolute;
+  width: 0px;
+  border: 6px solid black;
+  border-radius: 50%;
+  top: -6px;
+  transition: 0.4s linear;
+}
+.songList {  
+  max-height: 450px;
+  overflow-y: scroll;
+  margin: 20px 0;
+}
+.songList ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.songList ul li {
+  font-size: 14px;
+  list-style-type: none;
+  border: 1px solid white;
+  margin: 5px 0;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  border-radius: 5px;
+  gap: 15px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-around;
+}
+.playbtn {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 0.3s ease-out;
+  height: 25px !important;
+}
+.songList ul li:hover > .playbtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.songList ul li img {
+  height: 18px;
+}
+.songContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
